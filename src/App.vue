@@ -7,9 +7,9 @@
 
 <script setup>
 import MainCard from "./components/MainCard.vue";
-// Pas besoin de "export default" ici
+//  import des components
 
-const name = "App"; // Vous pouvez également déclarer des variables ici
+const name = "App"; // Possibilité de déclarer des variables ici
 </script>
 
 <style scoped></style>
