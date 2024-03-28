@@ -7,7 +7,7 @@
 
 <script setup>
 import MainCard from "./components/MainCard.vue";
-//  import des components
+//  import des
 
 const name = "App"; // Possibilité de déclarer des variables ici
 </script>

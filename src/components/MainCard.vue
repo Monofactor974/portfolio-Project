@@ -4,7 +4,7 @@
       <div class="profile">
         <img src="../assets/profilepic.jpg" alt="" />
         <h3>Name Here</h3>
-        <p>Software Developer</p>
+        <p>Developer Junior</p>
       </div>
       <div class="social-link">
         <div class="link">
@@ -81,16 +81,16 @@
       <div class="technology-section">
         <h1>Technologies Studied</h1>
         <div class="logos">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="../assets/js.svg" alt="" />
+          <img src="../assets/css3.svg" alt="" />
+          <img src="../assets/blender.svg" alt="" />
         </div>
       </div>
       <div class="button-container">
         <div class="projects-button">
           <a href="">My projects</a>
         </div>
-        <div>
+        <div class="projects-button">
           <a href="">My Resume</a>
         </div>
       </div>
@@ -112,11 +112,17 @@ export default {
 <style scoped>
 /* Ajoutez vos styles CSS ici */
 
+img {
+  height: 20px;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
   background-color: rgb(110, 110, 110);
   border-radius: 25px;
+  justify-content: center;
+  text-align: center;
 }
 
 .container-one {
@@ -124,6 +130,7 @@ export default {
   padding: 2.5%;
   width: 30%;
   border-radius: 25px;
+  text-align: center;
 }
 .profile img {
   width: 100px; /* Définir une largeur fixe */
@@ -134,7 +141,7 @@ export default {
 .link a {
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 20px;
 }
 .link svg {
   height: 4rem;
@@ -143,8 +150,33 @@ export default {
   background-color: rgb(34, 46, 58);
   margin: 2.5%;
   width: 70%;
+  border-radius: 25px;
+  color: aliceblue;
 }
 .about-me {
-  text-align: left;
+  text-align: center;
+  background-color: rgb(83, 83, 83);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.logos img {
+  height: 2.5rem;
+}
+.bouton-container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.projects-button {
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+.projects-button a {
+  text-decoration: none;
+  color: black;
 }
 </style>
