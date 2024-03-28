@@ -1,6 +1,6 @@
 <template>
-  <div class="matrix-background">
-    <div class="background">
+  <div class="background">
+    <div>
       <h1>PORTFOLIO</h1>
       <MainCard />
       <ProjectsCard />
@@ -27,10 +27,32 @@ const name = "App"; // Possibilité de déclarer des variables ici
 
 h1 {
   color: green;
-  text-align: center;
+  text-align: left;
   font-family: "Courier New", monospace;
   font-size: 60px;
   margin: 0;
   padding-top: 20px;
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateX(
+      calc(10% - 50px)
+    ); /* Déplace l'élément à 10% de la largeur de la fenêtre moins 50px */
+  }
+  100% {
+    transform: translateX(
+      calc(70% - 50px)
+    ); /* Déplace l'élément à 90% de la largeur de la fenêtre moins 50px */
+  }
+}
+@media only screen and (max-width: 950px) {
+  .main-container {
+    width: 95%;
+  }
 }
 </style>

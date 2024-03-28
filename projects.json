@@ -4,7 +4,15 @@
       "id": 1,
       "Title": "Project One",
       "About": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloribus animi iure.",
-      "Image": "",
+      "Image": "./src/assets/Project01.png",
+      "Link1": "https://github.com/Monofactor974/Dynamiser-un-espace-commentaire.git",
+      "Link2": "https://github.com/Monofactor974/Dynamiser-un-espace-commentaire.git"
+    },
+    {
+      "id": 2,
+      "Title": "Project Two",
+      "About": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloribus animi iure.",
+      "Image": "./src/assets/Project02.png",
       "Link1": "",
       "Link2": ""
     }

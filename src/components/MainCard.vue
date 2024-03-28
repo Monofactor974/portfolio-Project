@@ -98,7 +98,6 @@
       </div>
     </div>
   </div>
-  <h1>Test portfolio</h1>
 </template>
 
 <script>
@@ -192,5 +191,10 @@ img {
   background-color: black; /* Fond noir */
   padding: 20px; /* Espacement intérieur pour le contenu */
   box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+@media only screen and (max-width: 950px) {
+  .main-container {
+    width: 95%;
+  }
 }
 </style>
