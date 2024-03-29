@@ -37,7 +37,7 @@ export default {
 
 .link {
   font-size: 40px; /* Modifier la taille du lien selon vos préférences */
-  color: brown;
+  color: aliceblue;
 }
 .image {
   width: 300px; /* Définir la largeur de l'image selon vos préférences */

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "Title": "Project One",
-      "About": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloribus animi iure.",
+      "About": "Commenter un espace dynamique.",
       "Image": "./src/assets/Project01.png",
       "Link1": "https://github.com/Monofactor974/Dynamiser-un-espace-commentaire.git",
       "Link2": "https://github.com/Monofactor974/Dynamiser-un-espace-commentaire.git"
