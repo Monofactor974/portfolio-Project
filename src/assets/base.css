@@ -71,7 +71,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 220px;
 }
 body {
   background-color: black; /* Fond noir pour toute la page */
+}
+.footer {
+  padding: 20px; /* Ajouter de l'espace intérieur */
+  background-color: rgb(102, 102, 99); /* Couleur de fond jaune */
+  color: rgb(243, 243, 243); /* Couleur du texte blanc */
+  text-align: center; /* Centrer le texte */
 }

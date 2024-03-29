@@ -1,11 +1,15 @@
 <template>
-  <div class="background">
-    <div class="main-container">
-      <h1 class="move-text">PORTFOLIO</h1>
-      <MainCard />
-      <!-- <ProjectsCard /> -->
+  <header></header>
+  <body>
+    <div class="background">
+      <div class="main-container">
+        <h1 class="move-text">PORTFOLIO</h1>
+        <MainCard />
+        <!-- <ProjectsCard /> -->
+      </div>
     </div>
-  </div>
+  </body>
+  <footer></footer>
 </template>
 
 <script>
@@ -29,7 +33,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .main-container {
