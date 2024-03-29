@@ -4,13 +4,13 @@
       <div class="container-one">
         <div class="profile">
           <img src="../assets/profilepic.jpg" alt="" />
-          <h3>Name Here</h3>
+          <h3>BOYER JEAN-LUC</h3>
           <p>Developer Junior</p>
         </div>
         <div class="social-link">
           <div class="link">
             <img src="" alt="" />
-            <a href="">
+            <a href="https://github.com/Monofactor974" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="4em"
@@ -24,7 +24,10 @@
             <h2>Github</h2>
           </div>
           <div class="link">
-            <a href="">
+            <a
+              href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="4em"
@@ -39,7 +42,7 @@
           </div>
           <div class="link">
             <img src="" alt="" />
-            <a href="">
+            <a href="" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="4em"
@@ -54,7 +57,7 @@
           </div>
           <div class="link">
             <img src="" alt="" />
-            <a href="">
+            <a href="https://www.instagram.com/monofactor974/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="4em"
@@ -73,10 +76,14 @@
         <div class="about-me">
           <h1>About Me</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            doloribus animi iure, officiis fugiat id, consequatur maiores
-            aperiam assumenda maxime, dolorem ad qui corrupti enim consequuntur
-            quis fuga sapiente ullam!
+            I am a technology enthusiast and a geek culture aficionado, with a
+            keen interest in cosplay. Holding a Master's degree in video game
+            design, I have a solid understanding of game mechanics and
+            interactive storytelling. I have also begun exploring programming,
+            which enriches my practical understanding of game development and
+            related technologies. My profile reflects a unique blend of
+            creativity, technical skills, and a passion for innovation in the
+            field of video games and technology.
           </p>
         </div>
         <div class="technology-section">
@@ -89,10 +96,14 @@
         </div>
         <div class="button-container">
           <div class="projects-button">
-            <a href="">My projects</a>
+            <router-link to="project">My Project</router-link>
           </div>
           <div class="projects-button">
-            <a href="">My Resume</a>
+            <a
+              href="https://github.com/Monofactor974/Premier-CV"
+              target="_blank"
+              >CV</a
+            >
           </div>
         </div>
       </div>
@@ -136,17 +147,21 @@ img {
   text-align: center;
 }
 .profile img {
-  width: 100px; /* Définir une largeur fixe */
-  height: 100px; /* Définir une hauteur fixe */
-  object-fit: cover; /* Optionnel : pour s'assurer que l'image est bien ajustée */
-  border-radius: 50%; /* Pour conserver les coins arrondis et obtenir un effet de cercle */
+  object-fit: cover; /* Ajuste l'image pour remplir son conteneur tout en conservant ses proportions */
+  border-radius: 25%; /* Pour conserver les coins arrondis et obtenir un effet de cercle */
+  width: 100%; /* Image de profil responsive */
+  max-width: 300px; /* Largeur maximale de l'image */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .link svg {
+  height: 4rem;
+  margin: 15px;
   width: 50px; /* Ajustez la taille selon vos besoins */
   height: 50px; /* Ajustez la taille selon vos besoins */
-  background-color: #ff0000; /* Assurez-vous que l'arrière-plan est transparent */
+  background-color: transparent; /* Assurez-vous que l'arrière-plan est transparent */
   border-radius: 50%; /* Assurez-vous que l'icône est arrondie */
-  animation: glowing 0.5s infinite; /* Appliquez l'animation à l'icône */
+  animation: glowing 1.5s infinite; /* Appliquez l'animation à l'icône */
 }
 @keyframes glowing {
   0% {
@@ -167,15 +182,7 @@ img {
     box-shadow: 0 0 10px #fdfcfc, 0 0 20px #160a0a, 0 0 30px #f1adad;
   }
 }
-.link svg {
-  height: 4rem;
-  margin: 15px;
-  width: 50px; /* Ajustez la taille selon vos besoins */
-  height: 50px; /* Ajustez la taille selon vos besoins */
-  background-color: transparent; /* Assurez-vous que l'arrière-plan est transparent */
-  border-radius: 50%; /* Assurez-vous que l'icône est arrondie */
-  animation: glowing 1.5s infinite; /* Appliquez l'animation à l'icône */
-}
+
 .container-two {
   background-color: rgb(34, 46, 58);
   margin: 2.5%;
@@ -194,7 +201,7 @@ img {
   height: 3.5rem;
   margin: 2.5%;
 }
-.bouton-container {
+.boutton-container {
   margin-top: 5%;
   display: flex;
   flex-direction: row;

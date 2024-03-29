@@ -6,6 +6,8 @@ import "./assets/main.css"; // Importez vos styles CSS ici
 import { createRouter, createWebHistory } from "vue-router";
 import PageErreur from "./components/PageNotFound.vue";
 import home from "./components/Home.vue";
+import Myresume from "./components/Myresume.vue";
+import Myproject from "./components/ProjectsCard.vue";
 
 const routes = [
   {
@@ -15,6 +17,14 @@ const routes = [
   {
     path: "/:pathMatch(.*)*",
     component: PageErreur,
+  },
+  {
+    path: "/resume",
+    component: Myresume,
+  },
+  {
+    path: "/project",
+    component: Myproject,
   },
 ];
 const router = createRouter({

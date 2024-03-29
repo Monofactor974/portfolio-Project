@@ -1,4 +1,5 @@
 <template>
+  <div class="retour"><router-link to="/">Home</router-link></div>
   <div class="centercontainer">
     <div
       class="project-card"
@@ -76,5 +77,14 @@ body {
   .main-container {
     width: 95%;
   }
+}
+.retour {
+  text-align: left;
+  font-family: "Courier New", monospace;
+  font-size: 4vw; /* Utilisation de vw pour une taille de police responsive */
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20%;
+  height: auto;
 }
 </style>

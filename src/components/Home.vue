@@ -1,9 +1,9 @@
 <template>
   <div class="background">
     <div class="main-container">
-      <h1>PORTFOLIO</h1>
+      <h1 class="move-text">PORTFOLIO</h1>
       <MainCard />
-      <ProjectsCard />
+      <!-- <ProjectsCard /> -->
     </div>
   </div>
 </template>
@@ -38,24 +38,12 @@ export default {
 
 h1 {
   color: green;
-  text-align: left;
+  text-align: center;
   font-family: "Courier New", monospace;
-  font-size: 60px;
+  font-size: 6vw; /* Utilisation de vw pour une taille de police responsive */
   margin: 0;
   padding-top: 20px;
-  animation-duration: 5s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes slidein {
-  0% {
-    transform: translateX(calc(10% - 50px));
-  }
-  100% {
-    transform: translateX(calc(70% - 50px));
-  }
+  height: auto;
 }
 
 @media only screen and (max-width: 950px) {
