@@ -141,13 +141,40 @@ img {
   object-fit: cover; /* Optionnel : pour s'assurer que l'image est bien ajustée */
   border-radius: 50%; /* Pour conserver les coins arrondis et obtenir un effet de cercle */
 }
-.link a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
+.link svg {
+  width: 50px; /* Ajustez la taille selon vos besoins */
+  height: 50px; /* Ajustez la taille selon vos besoins */
+  background-color: #ff0000; /* Assurez-vous que l'arrière-plan est transparent */
+  border-radius: 50%; /* Assurez-vous que l'icône est arrondie */
+  animation: glowing 0.5s infinite; /* Appliquez l'animation à l'icône */
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #fdfcfc, 0 0 20px #160a0a, 0 0 30px #f1adad;
+  }
+  10% {
+    box-shadow: 0 0 10px #f1adad, 0 0 20px #160a0a, 0 0 30px #541cd8;
+  }
+  20% {
+    box-shadow: 0 0 10px #fdfcfc, 0 0 20px #160a0a, 0 0 30px #5a0453;
+  }
+
+  30% {
+    box-shadow: 0 0 10px #fdfcfc, 0 0 20px #160a0a, 0 0 30px #541cd8;
+  }
+
+  40% {
+    box-shadow: 0 0 10px #fdfcfc, 0 0 20px #160a0a, 0 0 30px #f1adad;
+  }
 }
 .link svg {
   height: 4rem;
+  margin: 15px;
+  width: 50px; /* Ajustez la taille selon vos besoins */
+  height: 50px; /* Ajustez la taille selon vos besoins */
+  background-color: transparent; /* Assurez-vous que l'arrière-plan est transparent */
+  border-radius: 50%; /* Assurez-vous que l'icône est arrondie */
+  animation: glowing 1.5s infinite; /* Appliquez l'animation à l'icône */
 }
 .container-two {
   background-color: rgb(34, 46, 58);
@@ -164,7 +191,8 @@ img {
   margin: 2.5%;
 }
 .logos img {
-  height: 2.5rem;
+  height: 3.5rem;
+  margin: 2.5%;
 }
 .bouton-container {
   margin-top: 5%;
@@ -196,5 +224,9 @@ img {
   .main-container {
     width: 95%;
   }
+}
+.profile {
+  padding: 15px;
+  margin: 15px;
 }
 </style>

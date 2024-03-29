@@ -35,16 +35,15 @@ export default {
 </script>
 
 <style>
-.background {
-  background-color: black;
-  min-height: 100vh;
+body {
+  background-color: black; /* Fond noir pour toute la page */
 }
-
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .project-card {
